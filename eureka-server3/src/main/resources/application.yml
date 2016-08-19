@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: eureka-server-clustered
+server:
+  port: 1113
+eureka:
+  instance:
+    hostname: eureka-tertiary
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://eureka-primary:1111/eureka/,http://eureka-secondary:1112/eureka/

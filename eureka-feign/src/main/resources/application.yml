@@ -1,0 +1,14 @@
+server:
+  port: 2226
+
+spring:
+  application:
+    name: ribbon-consumer
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/,http://localhost:1112/eureka/,http://localhost:1113/eureka/
+      
