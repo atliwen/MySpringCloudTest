@@ -10,3 +10,5 @@ spring:
             - config-repo
           username: 499014099@qq.com
           password: qq123123
+server:
+  port: 8601
